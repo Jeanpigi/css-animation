@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+    font-size: 2.5rem;
+}
+
+.content, .elemento {
+    font-size: 2.6rem;
+}
+
+.shadow {
+    border-radius: 50%;
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+}
+
+/* Pseudo clases */
+a:link {
+    color: hotpink;
+}
+
+a:visited {
+    color: tomato;
+}
+
+a:hover {
+    background-color: palegoldenrod;
+}
+
+p:not(.maravillas) {
+    color: lightpink;
+}
+
+.content div:nth-child(1) {
+    color: bisque;
+}
+
+ /* pseudo elementos */
+.elemento div::before {
+    content: "🐶";
+}
+
+.elemento div::after {
+    content: "🐱";
+}
+
+ /* transform code */
+.circle {
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    transform: translate(-20px, 20px);
+}
+
+ /* escalar */
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(5,40,14);
+    background: linear-gradient(90deg, rgba(5,40,14,1) 0%, rgba(42,42,171,1) 34%, rgba(0,212,255,1) 67%);
+}
+
+.circulo:hover {
+    transform: scaleY(0.8);
+}
+
+.skew {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: lightpink;
+}
+
+.skew:hover {
+    transform: skew(20deg);
+}
+
+.rotate {
+    width: 150px;
+    height: 100px;
+    background-color: #3A1C71;
+    transform-origin: left top;
+}
+
+.rotate:hover {
+    transform: rotate(20deg);
+}
+
+ /* perspectiva */
+.padre {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 5px solid hotpink;
+    perspective: 100px;
+}
+
+.hijo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: papayawhip;
+    border: 3px solid hotpink;
+    opacity: 0.5;
+    transform-style: preserve-3d;
+    transform: rotateX(10deg);
+}
