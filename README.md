@@ -54,4 +54,4 @@ Si deseas contribuir a este proyecto y ayudarlo a crecer, sigue estos pasos:
 
 ## Licencia
 
-Esta aplicación está bajo la Licencia MIT.
+Esta aplicación está bajo la Licencia [MIT](https://choosealicense.com/licenses/mit/)
