@@ -5,7 +5,7 @@
   "author": "Jean Pierre <stick-master666@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "node --watch index.js",
     "start": "node index.js",
     "lint": "eslint . --fix"
   },
@@ -14,7 +14,6 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
-    "nodemon": "^2.0.7"
+    "eslint": "^7.27.0"
   }
 }
